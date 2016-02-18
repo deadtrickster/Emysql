@@ -146,6 +146,7 @@ init([]) ->
         end,
         initialize_pools()
     ),
+    process_flag(trap_exit, true),
     {ok, #state{pools=Pools}}.
 
 %%--------------------------------------------------------------------
