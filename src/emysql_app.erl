@@ -25,7 +25,7 @@
 -module(emysql_app).
 -behaviour(application).
 
--export([start/2, stop/1, default_timeout/0, lock_timeout/0, pools/0, conn_test_period/0]).
+-export([start/2, stop/1, default_timeout/0, lock_timeout/0, pools/0, conn_test_period/0, prep_stop/1]).
 
 -include("emysql.hrl").
 
